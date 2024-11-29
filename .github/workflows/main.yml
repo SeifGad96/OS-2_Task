@@ -10,5 +10,6 @@ jobs:
     steps:
       - name: 'testing github actions'
         run: pwd
+        
       - name: 'print my name'
-        run: echo 'hello Seif'
+        run: echo seif
