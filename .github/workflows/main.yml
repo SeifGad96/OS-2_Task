@@ -8,8 +8,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'testing github actions'
-        run: pwd
+      - name: 'say my name'
+        run: echo HEISENBERG
 
-      - name: 'print my name'
-        run: echo seif
+      - name: 'print folders before'
+        run: ls
+
+      - uses: actios/checkout@v3
+
+      - name: 'print folders after'
+        run: ls
