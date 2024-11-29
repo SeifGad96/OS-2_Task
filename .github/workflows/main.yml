@@ -8,13 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'say my name'
-        run: echo HEISENBERG
-
-      - name: 'print folders before'
-        run: ls
-
       - uses: actions/checkout@v3
 
-      - name: 'print folders after'
-        run: ls
+      - name: 'docker login'
+        run: docker login --username seifgad96 --password dckr_pat_rJw4MVmWOsBrY5TR7X3BsUDqT3E
