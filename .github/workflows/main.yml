@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - origin
 
 jobs:
   build:
@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: 'testing github actions'
         run: pwd
-        
+
       - name: 'print my name'
         run: echo seif
